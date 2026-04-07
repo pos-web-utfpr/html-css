@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos de Estilização CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Exemplos de Elementos Estilizados com CSS</h1>
+    </header>
+
+    <section id="hierarquia">
+      <h2>Hierarquia de Decisão</h2>
+      <p id="hierarquia-p1">
+        Este parágrafo usa o estilo padrão do user agent (geralmente preto).
+      </p>
+      <p id="hierarquia-p2">
+        Este parágrafo é estilizado pelo arquivo CSS (azul).
+      </p>
+      <p id="hierarquia-p3">
+        Este parágrafo usa !important para sobrescrever (vermelho).
+      </p>
+    </section>
+
+    <section id="especificidade">
+      <p>Olá! p sem classe</p>
+      <h2>Especificidade</h2>
+      <p id="especificidade-p1" style="color: green">
+        Este parágrafo tem estilo inline (verde).
+      </p>
+      <p id="especificidade-p2" class="destaque">
+        Este parágrafo usa classe (azul escuro).
+      </p>
+      <p id="especificidade-p3" data-atributo="valor">
+        Este parágrafo usa atributo (roxo).
+      </p>
+      <p id="especificidade-p4">Este parágrafo usa elemento (cinza).</p>
+      <p id="especificidade-p5">
+        Este parágrafo usa pseudo-classe (hover para amarelo).
+      </p>
+      <div id="especificidade-div">
+        <p>
+          Este parágrafo está dentro de um div com pseudo-elemento (::before).
+        </p>
+      </div>
+    </section>
+
+    <section id="seletores">
+      <h2>Seletores Combinados</h2>
+      <div class="pai">
+        <p>Filho direto 1 (dentro de .pai)</p>
+        <p>Filho direto 2 (dentro de .pai)</p>
+        <div class="filho">
+          <p>Descendente (não filho direto) dentro de .filho</p>
+        </div>
+      </div>
+
+      <h3>Filhos imediatos (>)</h3>
+      <div class="pai-filho">
+        <p>Filho direto de .pai-filho</p>
+        <section>
+          <p>Não é filho direto (descendente)</p>
+        </section>
+      </div>
+
+      <h3>Adjacentes (+)</h3>
+      <p class="adjacente-1">Parágrafo primeiro (adjacente)</p>
+      <p class="adjacente-2">
+        Parágrafo segundo (deve ser estilizado por seletor adjacente)
+      </p>
+
+      <h3>Gerais (~)</h3>
+      <p class="geral-1">Primeiro irmão.</p>
+      <span>Elemento não-parágrafo</span>
+      <p class="geral-2">Irmão geral (após o span).</p>
+      <p class="geral-3">Outro irmão geral.</p>
+    </section>
+
+    <footer>
+      <p>Exemplos criados para demonstração.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+/* Reset de margin e border */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #5e1010;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Hierarquia de decisão */
+#hierarquia-p2 {
+  color: blue;
+}
+
+#hierarquia-p3 {
+  color: red !important;
+}
+
+#hierarquia-p3 {
+  color: rgb(65, 161, 90);
+}
+
+/* Especificidade */
+p {
+  color: gray;
+}
+
+#especificidade-p2 {
+  color: rgb(209, 11, 186);
+}
+
+.destaque {
+  color: darkblue;
+}
+
+[data-atributo] {
+  color: purple;
+}
+
+p:hover {
+  color: yellow;
+  font-size: large;
+}
+
+#especificidade-div::before {
+  content: "Antes: ";
+  color: orange;
+  font-weight: bold;
+}
+
+/* Seletor combinador child (descendente) */
+.pai p {
+  color: teal;
+}
+
+/* Seletor filho imediato */
+.pai-filho > p {
+  color: navy;
+  font-weight: 700;
+}
+
+/* Seletor adjacente */
+.adjacente-1 + .adjacente-2 {
+  color: crimson;
+  background-color: #ffecec;
+}
+
+/* Seletor geral de irmãos */
+.geral-1 ~ .geral-2,
+.geral-1 ~ .geral-3 {
+  color: darkgreen;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}

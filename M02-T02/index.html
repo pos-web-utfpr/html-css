@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exemplos do Box Model CSS</h1>
+      <p class="intro">
+        O Box Model é composto por Content, Padding, Border e Margin
+      </p>
+
+      <section>
+        <h2>Exemplo 1: Box Simples</h2>
+        <div class="box box-simple">
+          <p>Conteúdo</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 2: Com Padding</h2>
+        <div class="box box-padding">
+          <p>Conteúdo com Padding</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 3: Com Border</h2>
+        <div class="box box-border">
+          <p>Conteúdo com Border</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 4: Com Margin</h2>
+        <div class="box box-margin">
+          <p>Conteúdo com Margin</p>
+        </div>
+        <p class="note">
+          Observe o espaço vazio ao redor deste elemento (Margin)
+        </p>
+      </section>
+
+      <section>
+        <h2>Exemplo 5: Box Model Completo</h2>
+        <div class="box box-complete">
+          <span class="label">margin</span>
+          <div class="border-wrapper">
+            <span class="label">border</span>
+            <div class="padding-wrapper">
+              <span class="label">padding</span>
+              <div class="content-wrapper">
+                <span class="label">content</span>
+                <p>Conteúdo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Esquema Visual do Box Model</h2>
+        <div class="box-diagram">
+          <div class="diagram-label">MARGIN</div>
+          <div class="diagram-border">
+            <div class="diagram-label">BORDER</div>
+            <div class="diagram-padding">
+              <div class="diagram-label">PADDING</div>
+              <div class="diagram-content">
+                <div class="diagram-label">CONTENT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 6: O Problema Clássico - 100% + Padding</h2>
+        <p class="warning">
+          ⚠️ Este é um problema comum: quando você define width: 100% e adiciona
+          padding ou border, o elemento estoura do container pai.
+        </p>
+
+        <h3>❌ Solução Errada (sem box-sizing)</h3>
+        <div class="width-demo">
+          <div class="box-wrong">
+            <p>Width: 100% + Padding: 20px + Border: 3px = OVERFLOW!</p>
+          </div>
+          <p class="explanation">
+            Este elemento tem width: 100%, mas estoura porque o padding e border
+            são adicionados FORA da largura.
+          </p>
+        </div>
+
+        <h3>✅ Solução Correta (com box-sizing)</h3>
+        <div class="width-demo">
+          <div class="box-correct">
+            <p>Width: 100% + Padding: 20px + Border: 3px = ✓ PERFEITO!</p>
+          </div>
+          <p class="explanation">
+            Este elemento usa box-sizing: border-box, então padding e border são
+            inclusos na largura total.
+          </p>
+        </div>
+
+        <h3>📝 Comparação Visual</h3>
+        <div class="comparison-box">
+          <div class="comparison-item">
+            <strong>SEM box-sizing:</strong>
+            <div class="spec">
+              Content: 100%<br />
+              + Padding: 20px × 2<br />
+              + Border: 3px × 2<br />
+              = <span class="overflow">246px de overflow!</span>
+            </div>
+          </div>
+          <div class="comparison-item">
+            <strong>COM box-sizing: border-box:</strong>
+            <div class="spec">
+              Content: 100%<br />
+              (padding e border inclusos)<br />
+              = <span class="perfect">Encaixa perfeitamente!</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 7: Margin Auto - Centralização</h2>
+        <p class="info">
+          O truque do <code>margin: auto</code> para centralizar na tela
+        </p>
+        <div class="centered-container">
+          <div class="centered-element">elemento centralizado</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exemplo 8: Display Block vs Inline-Block</h2>
+        <p class="info">Diferença no comportamento de layout</p>
+
+        <div>
+          <strong style="display: block; margin-bottom: 10px">Block:</strong>
+          <div class="demo-block">Bloco 1</div>
+          <div class="demo-block">Bloco 2</div>
+        </div>
+
+        <div style="margin-top: 20px">
+          <strong style="display: block; margin-bottom: 10px"
+            >Inline-Block:</strong
+          >
+          <div class="demo-inline-block">Elemento 1 Grande!</div>
+          <div class="demo-inline-block">Elemento 2</div>
+          <div class="demo-inline-block">Elemento 3</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Obrigatórios</legend>
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome completo aqui"
+          title="Campo obrigatório. Digite seu nome completo."
+          required
+        /><br /><br />
+
+        <label for="cpf">CPF:</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+          placeholder="000.000.000-00"
+          title="Campo obrigatório. Digite seu CPF no formato 000.000.000-00."
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exemplo@email.com"
+          title="Campo obrigatório. Digite um endereço de email válido."
+          required
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Complementares</legend>
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="(11) 99999-9999"
+          title="Campo opcional. Digite seu número de telefone."
+        /><br /><br />
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input
+          type="date"
+          id="data_nascimento"
+          name="data_nascimento"
+          title="Campo obrigatório. Selecione sua data de nascimento."
+          required
+        /><br /><br />
+
+        <label for="score_financeiro">Score Financeiro:</label>
+        <input
+          type="number"
+          id="score_financeiro"
+          name="score_financeiro"
+          min="0"
+          max="10"
+          placeholder="0-10"
+          title="Campo opcional. Digite um score entre 0 e 10."
+        /><br /><br />
+
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          minlength="5"
+          maxlength="20"
+          placeholder="Mínimo 5, máximo 20 caracteres"
+          title="Campo obrigatório. Digite uma senha entre 5 e 20 caracteres."
+          required
+        /><br /><br />
+
+        <input type="submit" value="Cadastrar" />
+      </fieldset>
+    </form>
+  </body>
+</html>

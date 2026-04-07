@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Galeria de Imagens com Filtros CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Galeria de Imagens com Filtros CSS</h1>
+    <section class="gallery">
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+          alt="Natureza"
+        />
+        <p>Original</p>
+      </div>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop"
+          alt="Montanha"
+        />
+        <p>Grayscale</p>
+      </div>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+          alt="Floresta"
+        />
+        <p>Sepia</p>
+      </div>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop"
+          alt="Lago"
+        />
+        <p>Blur</p>
+      </div>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+          alt="Praia"
+        />
+        <p>Brightness</p>
+      </div>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop"
+          alt="Cidade"
+        />
+        <p>Hue Rotate</p>
+      </div>
+    </section>
+    <section class="glassmorphism">
+      <div class="background-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Alerta!</h2>
+          <p>
+            Esta é uma modal com efeito glassmorphism. O fundo está borrado.
+          </p>
+          <button>OK</button>
+        </div>
+      </div>
+    </section>
+    <section class="blend-modes">
+      <h2>Blend Modes: background-blend-mode e mix-blend-mode</h2>
+      <div class="blend-row">
+        <div class="bg-blend">
+          <div class="bg-blend-box"></div>
+          <p>background-blend-mode: multiply</p>
+        </div>
+        <div class="mix-blend">
+          <div class="mix-blend-box">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+              alt="Mix Blend"
+            />
+          </div>
+          <p>mix-blend-mode: screen</p>
+        </div>
+      </div>
+    </section>
+    <section class="negative-card">
+      <h2>Card com efeito negativo</h2>
+      <div class="negative-card-box">
+        <div class="negative-card-content">NEGATIVE</div>
+      </div>
+    </section>
+  </body>
+</html>

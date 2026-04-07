@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 0.5rem;
+}
+
+.card h3 {
+  position: absolute;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.item {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grow examples */
+.grow-0 {
+  flex-grow: 0;
+}
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+.grow-3 {
+  flex-grow: 3;
+}
+.grow-4 {
+  flex-grow: 4;
+}
+
+/* Shrink examples */
+.shrink-0 {
+  flex: 1;
+}
+.shrink-1 {
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+.shrink-2 {
+  flex-shrink: 2;
+  flex-basis: 100px;
+}
+.shrink-3 {
+  flex-shrink: 3;
+  flex-basis: 100px;
+}
+.shrink-4 {
+  flex: 1;
+}
+
+/* Basis examples */
+.basis-50 {
+  flex-basis: 50px;
+}
+.basis-100 {
+  flex-basis: 100px;
+}
+.basis-150 {
+  flex-basis: 150px;
+}
+.basis-200 {
+  flex-basis: 200px;
+}
+.basis-250 {
+  flex-basis: 250px;
+}
+
+.container-basis {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,50 @@
+/* Estilos para validação de campos */
+input:valid {
+  border-color: green;
+  background-color: #f0fff0;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+  background-color: #fff0f0;
+}
+
+input:invalid:placeholder-shown {
+  border-color: #ccc;
+  background-color: white;
+}
+
+/* Estilos básicos para o formulário */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #367e3a;
+}
