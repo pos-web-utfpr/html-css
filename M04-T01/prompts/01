@@ -1,0 +1,15 @@
+Prompt 1 — Site NÃO Responsivo (problema)
+
+Crie uma página web simples (HTML e CSS) para um site de venda de carros contendo um header com o nome da loja, um conteúdo principal com título, descrição e um botão de ação (ex: “Ver ofertas”), e uma sidebar com uma lista de categorias (SUV, Sedan, Hatch, Elétricos). Adicione também uma seção com cards de carros, cada um contendo imagem, nome do carro e preço.
+
+O layout deve ter o conteúdo principal à esquerda e a sidebar à direita utilizando larguras fixas em pixels (px). As imagens devem ter tamanho fixo (ex: width: 400px) e os textos devem usar tamanhos fixos em px.
+
+As imagens dos carros estão na página images
+
+Não utilize media queries, porcentagens, flexbox ou grid.
+
+O objetivo é que:
+
+O layout quebre em telas menores
+As imagens ultrapassem o container
+O texto fique desproporcional

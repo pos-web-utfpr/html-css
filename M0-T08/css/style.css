@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Museo";
+  src: url("/fonts/Museo700-Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset + better defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #2c3641;
+  color: #fff;
+  font-family: "Museo", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.content {
+  max-width: 720px;
+}
+
+/* Typography */
+.summary {
+  margin-bottom: 20px;
+  font-size: clamp(24px, 5vw, 40px);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-shadow: 1px 1px #111;
+}
+
+.additional {
+  margin: 10px 0;
+  color: #8c9198;
+  font-size: clamp(16px, 2.5vw, 18px);
+  text-shadow: 1px 1px #111;
+}
+
+/* Links */
+a {
+  color: #ffbd50;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #ff9d00;
+  transform: scale(1.05);
+}
+
+/* Emphasis */
+strong {
+  color: #fff000;
+  font-weight: 700;
+}
+
+/* Social list */
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+li a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 0; /* hide text safely */
+}
